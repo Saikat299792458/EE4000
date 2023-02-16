@@ -1,2 +1,5 @@
-# EE4135
-Final Year Thesis of 1803005
+# EE 4000
+> ## Thesis Title: Klatt Formant Synthesis
+
+### Supervised by: Dr. Md. Mahbub Hasan
+Professor, Department of EEE, KUET
