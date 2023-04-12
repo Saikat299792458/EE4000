@@ -67,8 +67,8 @@ def main() -> None:
         sys.exit(2)
     
     if '-h' in arg_dict:
-        print("Usage: svd.py <original>.wav <compare:optional>.wav \
-              <sample size:optional>")
+        print("Usage: svd.py -o <original>.wav -c <compare:optional>.wav \
+               -s <sample size:optional>")
         sys.exit()
 
     sample_size = arg_dict['-s'] if '-s' in arg_dict else 5000
