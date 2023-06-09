@@ -7,8 +7,8 @@ plt.rcParams['figure.figsize'] = (10, 5)
 
 def main() -> None:
     "Main function of the program"
-    M = 30;    # window length = embedding dimension
-    N = 11000;   # length of generated time series
+    M = 2500;    # window length = embedding dimension
+    N = 44100;   # length of generated time series
 
     if len(sys.argv) != 2 and not sys.argv[1].endswith(".wav"):
         print("Invalid parameter")
@@ -31,7 +31,7 @@ def main() -> None:
 
 
     plt.title('Eigenvalues LAMBDA')
-    plt.plot(LAMBDA,'o-');
+    plt.plot(LAMBDA[:20],'o-');
     plt.show()
 
 
