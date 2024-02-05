@@ -23,6 +23,7 @@ def main() -> None:
     parser.add_argument('-BW', nargs='+', type=float, help='Formant bandwidth in dB', required=True)
     parser.add_argument('-len', type=float, help='Total number of samples', default=2000)
     parser.add_argument('-wl', type=float, help='Window Length', default=200)
+    parser.add_argument('-out', type=str, help='Output figure name', default="output.png")
     args = parser.parse_args()
 
     # User mistake handling
@@ -70,7 +71,7 @@ def main() -> None:
     plt.ylabel('Singular Value')
 
     plt.tight_layout()
-    #plt.savefig(f'FF_{int(args.formant_frequency)}BW_{int(args.bandwidth)}.png')
+    plt.savefig(args.out)
     plt.show()
 
 if __name__ == "__main__":
