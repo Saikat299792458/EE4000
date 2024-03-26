@@ -15,7 +15,7 @@ fs
 figure(1);
 set(gcf,'name','Time series X');
 clf;
-plot(t,X,'b-');
+plot(t, X,'b-');
 
 Y=zeros(N-M+1,M);
 for m=1:M
@@ -32,3 +32,5 @@ figure(2);
 set(gcf,'name','Eigenvalues LAMBDA')
 clf;
 plot(LAMBDA(1:30),'o-');
+xlabel("Singular Values", 'FontName', 'Times New Roman', 'FontSize', 12);
+ylabel("Significance", 'FontName', 'Times New Roman', 'FontSize', 12);
